@@ -17,10 +17,9 @@ header {
 h1 {
   text-transform: uppercase;
   color: #523920;
-  margin-bottom: 40px;
   letter-spacing: 1px;
   font-weight: 300;
-  margin-top: 60px;
+  margin: 60px 0 40px;
 }
 
 .header-description {
