@@ -13,7 +13,7 @@ function generateRecipe(event) {
   let ingredients = document.querySelector("#user-ingredients");
   let apiKey = "dd09922bof9dfbd100daf3a044cat44d";
   let prompt = `Write a recipe for a meal that uses the following ingredients : ${ingredients.value}. Add more ingredients that you think are necessary for the recipe.  Please write the answer using basic HTML.
-The title of the recipe should be in the begining inside a <strong> element. It should be followed by an empty line and after the ingredients list. Each ingredient should be separated by a <br/> element. After it should have an empty line and the cooking instructions inside a <p> element. Please do not add anymore informations, besides the name of the dish, the ingredients and the instructions. `;
+The title of the recipe should be in the begining inside a <strong> element. It should be followed by an break line and after the ingredients list, where each ingredient should be separated by a <br/> element. After it should have a line break and the cooking instructions inside a <p> element. Please do not add anymore informations, besides the name of the dish, the ingredients and the instructions. `;
   let context =
     "You are a chef that can make delicious dishes with any list of ingredients. Your mission is to generate a delicious recipe using the ingredients provided by the user.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
