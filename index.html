@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -34,7 +35,7 @@
           Enter one or more ingredients separated by commas. Example: chicken,
           tomato, basil...
         </div>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             class="search-field-form"
             type="text"
@@ -47,26 +48,12 @@
         </form>
       </div>
 
-      <div class="recipe-container">
-        <div class="recipe-name">Name of the recipe</div>
-        <div class="recipe-title">Ingredients</div>
-        <p class="recipe-text">
-          - Chicken <br />
-          - Tomato <br />
-          - Basil
-        </p>
-        <div class="recipe-title">Method</div>
-        <p class="recipe-text">
-          Heat 1 tbsp olive oil in a large frying pan with a lid and brown 2
-          chopped chicken breasts for 5-8 mins until golden. Remove and set
-          aside. <br />Tip in the 1 diced onion and cook for 3-4 mins until
-          soft. <br />
-          Add 1 thinly sliced red pepper, 2 crushed garlic cloves, 75g sliced
-          chorizo and 1 tbsp Cajun seasoning, and cook for 5 mins more.
-          <br />Stir the chicken back in with 250g long grain rice, add the 400g
-          can of tomatoes and 350ml chicken stock. Cover and simmer for 20-25
-          mins until the rice is tender.
-        </p>
+      <div class="recipe-container" id="recipe-container">
+        <div class="recipe-name"></div>
+        <div class="recipe-title"></div>
+        <p class="recipe-text"></p>
+        <div class="recipe-title"></div>
+        <p class="recipe-text"></p>
       </div>
 
       <footer>
