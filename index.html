@@ -32,10 +32,6 @@
       </header>
 
       <div class="search-container">
-        <div class="search-instructions">
-          Enter one or more ingredients separated by commas. Example: chicken,
-          tomato, basil...
-        </div>
         <form class="search-form" id="search-form">
           <input
             id="user-ingredients"
@@ -48,9 +44,13 @@
           />
           <input class="search-button" type="submit" value="Search" />
         </form>
+        <div class="search-instructions">
+          Enter one or more ingredients separated by commas. <br />ie.: chicken,
+          tomato, basil...
+        </div>
       </div>
 
-      <div class="recipe-container" id="recipe-container"></div>
+      <div class="recipe-container hidden" id="recipe-container"></div>
 
       <footer>
         This project was coded by

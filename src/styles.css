@@ -51,10 +51,11 @@ h1 {
 
 .search-instructions {
   color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 11px;
+  margin-top: 10px;
+  margin-left: 142px;
+  font-size: 8px;
   letter-spacing: 1px;
+  opacity: 0.7;
 }
 
 .search-form {
@@ -89,6 +90,27 @@ h1 {
   margin-bottom: 12px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  text-align: center;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
