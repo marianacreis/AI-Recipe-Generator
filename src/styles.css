@@ -78,24 +78,16 @@ h1 {
   background-color: white;
   color: #334a20;
   padding: 30px 70px;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
-.recipe-name {
+.recipe-container strong {
   font-size: 18px;
   margin-bottom: 12px;
   font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.recipe-title {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.recipe-text {
-  font-size: 13px;
-  line-height: 23px;
   letter-spacing: 1px;
 }
 

@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=´, initial-scale=1.0" />
-    <title>AI Recipe Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +10,9 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
+    <title>AI Recipe Generator</title>
   </head>
   <body>
     <div class="container">
@@ -37,6 +38,7 @@
         </div>
         <form class="search-form" id="search-form">
           <input
+            id="user-ingredients"
             class="search-field-form"
             type="text"
             placeholder="Enter the ingredients"
@@ -48,13 +50,7 @@
         </form>
       </div>
 
-      <div class="recipe-container" id="recipe-container">
-        <div class="recipe-name"></div>
-        <div class="recipe-title"></div>
-        <p class="recipe-text"></p>
-        <div class="recipe-title"></div>
-        <p class="recipe-text"></p>
-      </div>
+      <div class="recipe-container" id="recipe-container"></div>
 
       <footer>
         This project was coded by
